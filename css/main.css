@@ -1,0 +1,311 @@
+/******************
+Flexbox Layout
+*******************/
+
+.container, .headerContent, .mainContent {
+  display: flex;
+}
+
+.container {
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.headerContent {
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.mainContent {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/********************
+Flexbox Layout MEDIA
+*********************/
+@media all and (min-width: 760px) {
+  .container {
+    align-content: center;
+  }
+
+  .headerContent, .mainContent {
+    width: 80%;
+    margin: auto;
+  }
+
+  .headerContent {
+    align-content: flex-start;
+  }
+
+  .mainContent {
+    /*flex-direction: column;*/
+    flex-wrap: nowrap;
+  }
+
+}
+/****** Closing bracket of 760 pt *********/
+
+/********************
+Flexbox Layout MEDIA
+*********************/
+@media all and (min-width: 1000px) {
+
+  .headerContent, .mainContent {
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+  }
+
+}
+/****** Closing bracket of 1000 pt *********/
+
+
+/******************
+Additional Styling
+*******************/
+
+/****** CONTAINER STYLES *********/
+.container {
+  background-color: #f2f2f2;
+  color: #595959;
+  font-family: 'Vidaloka', serif;
+  width: 100%;
+  /*max-width: 1000px;*/
+}
+
+/****** HEADER CONTENT STYLES *********/
+.headerContent {
+  /*background-color: #e6e6e6;*/
+  height: 20%;
+  /*max-width: 760px;*/
+}
+
+.headerContent header {
+  /*background-color: #bfbfbf;*/
+  flex: 1;
+  justify-content: center;
+  margin: auto;
+}
+
+.headerContent header img {
+  width: 60%;
+  height: 60%;
+  margin: 10% 0 5% 20%;
+
+}
+
+.headerContent nav {
+  /*background-color: #bfbfbf;*/
+  flex: 2;
+  margin: auto;
+}
+
+.headerContent nav ul li {
+  list-style: none;
+  text-align: center;
+  margin: 2% 10% 0 0;
+}
+
+.headerContent nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-size: 1em;
+  color: #705D78;
+}
+
+.headerContent nav li a:hover {
+  color: #990073;
+}
+
+/****** MAIN CONTENT STYLES *********/
+.mainContent {
+  /*background-color: #d9d9d9;*/
+}
+
+.mainContent h2 {
+  text-align: center;
+  color: #705D78;
+}
+
+.mainContent p {
+  padding: 4%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/****** FOOTER STYLES *********/
+footer {
+  margin-top: 15%;
+}
+
+footer ul {
+  margin: auto;
+  padding-bottom: 4%;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-size: .7em;
+  color: #705D78;
+  margin-right: 3%;
+}
+
+footer li a:hover {
+  color: #990073;
+}
+
+/**********************
+   MEDIA STYLES 500 pt
+**********************/
+@media all and (min-width: 500px) {
+
+/****** HEADER CONTENT STYLES *********/
+.headerContent header img {
+  width: 85%;
+  margin-top: 28%;
+}
+
+.headerContent nav {
+  flex: 4;
+  margin-top: 18%;
+}
+
+.headerContent nav ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 5% 0 0;
+}
+
+.headerContent nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #705D78;
+  margin-right: 0;
+  white-space: nowrap;
+}
+
+/****** MAIN CONTENT STYLES *********/
+.mainContent {
+  margin-top: 8%;
+}
+
+/****** FOOTER CONTENT STYLES *********/
+footer ul {
+  margin-left: 10%;
+}
+
+footer ul li a {
+  font-size: .8em;
+  margin-right: 2%;
+}
+
+}
+/****** Closing bracket of 500 pt *********/
+
+/**********************
+   MEDIA STYLES 760 pt
+**********************/
+@media all and (min-width: 760px) {
+
+/****** HEADER CONTENT STYLES *********/
+  .headerContent header img {
+    width: 100%;
+    margin: 50% 0 0 28%;
+  }
+
+  .headerContent nav {
+  padding-left: 12%;
+  margin-top: 22%;
+  }
+
+  .headerContent nav ul li a {
+    font-size: .9em;
+    color: #705D78;
+    white-space: nowrap;
+  }
+
+/****** MAIN CONTENT STYLES *********/
+.mainContent {
+  margin-top: 5%;
+}
+
+  .mainContent section {
+    width: 60%;
+    flex: 2;
+    margin-left: 10%;
+  }
+
+  .mainContent article {
+    flex: 1;
+    order: -1;
+  }
+
+/****** FOOTER CONTENT STYLES *********/
+footer ul {
+    margin-left: 25%;
+  }
+
+}
+/****** Closing bracket of 760 pt *********/
+
+/**********************
+   MEDIA STYLES 1000 pt
+**********************/
+@media all and (min-width: 1000px) {
+
+  /****** HEADER CONTENT STYLES *********/
+  .headerContent {
+    margin: 0 auto 0 auto;
+  }
+    .headerContent header img {
+      width: 100%;
+      margin: 15% 0 0 90%;
+    }
+
+    .headerContent nav {
+    margin: 14% 0 0 20%;
+    }
+
+    .headerContent nav ul li a {
+      font-size: 1.1em;
+    }
+
+    /****** MAIN CONTENT STYLES *********/
+    .mainContent {
+      margin-top: 10%;
+    }
+
+      .mainContent section {
+        width: 60%;
+        flex: 3;
+        margin-left: 5%;
+      }
+
+      .mainContent article {
+        width: 30%;
+        flex: 2;
+        order: -1;
+        margin-left: 3%;
+      }
+/****** FOOTER CONTENT STYLES *********/
+      footer ul {
+          margin-left: 35%;
+        }
+
+        footer ul li a {
+          font-size: 1em;
+          margin-right: 2%;
+        }
+
+}
+/****** Closing bracket of 1000 pt *********/
