@@ -8,12 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- GOOGLE FONTS LINK -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Vidaloka" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700|Roboto:400,700" rel="stylesheet">
 
     <!-- CDN LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
     <!-- CSS LINK -->
     <link rel="stylesheet" href="css/min/main-min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="scripts/main-min.js" charset="utf-8"></script>
 
   </head>
 
@@ -26,15 +30,16 @@
       <div class="headerContent">
         <!-- HEADER -->
         <header>
-          <img src="css/min/images/wink.svg" alt="Hello World!">
+          <!-- <img src="css/min/images/wink.svg" alt="Hello World!"> -->
+          <p>AJ</p>
         </header>
 
         <!-- NAV -->
         <nav>
           <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">The Array Life</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#">About Me </a></li>
+            <li><a href="#">Array Journey</a></li>
+            <li><a href="#">Projects </a></li>
             <li><a href="#">Images</a></li>
           </ul>
         </nav>
@@ -46,18 +51,50 @@
         <!-- SECTION -->
         <section>
 
-          <h2>Welcome to my Array Journal!</h2>
+          <img src="css/min/images/aj_array.png" alt="Anna Jacknitsky">
 
+          <!-- First Accordion -->
+          <div class="accordionBlock">
+            <a href="#1"><h2>Welcome to my Array Journal!</h2></a>
+          <div id="boxOne" class="accordion">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div></div>
+
+
+<!-- Second Accordion -->
+<div class="accordionBlock">
+  <a href="#2"><h2>About Me</h2></a>
+<div id="boxTwo" class="accordion">
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div></div>
+
+          <!-- Third Accordion -->
+            <div class="accordionBlock">
+              <a href="#3"><h2>La Vida Array</h2></a>
+              <div id="boxThree" class="accordion"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            </div>
+          </div>
+
+          <!-- Fourth Accordion -->
+            <div class="accordionBlock">
+              <a href="#4"><h2>Projects</h2></a>
+              <div id="boxFour" class="accordion"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            </div>
+          </div>
+
+          <!-- Fifth Accordion -->
+            <div class="accordionBlock">
+              <a href="#5"><h2>Images</h2></a>
+              <div id="boxFive" class="accordion"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            </div>
+          </div>
 
         </section>
 
         <!-- ARTICLE -->
         <article class="aboutArray">
 
-          <h2>La Vida Array</h2>
 
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 
         </article>
       </div>
